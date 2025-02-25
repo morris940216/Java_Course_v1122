@@ -22,8 +22,7 @@ public class Lab00 {
       karel.move();
       karel.putBeeper();
       karel.move();
-      karel.turnLeft();
-      karel.turnLeft();
+      
       
 	}
 
