@@ -2,7 +2,7 @@ import edu.fcps.karel2.Display;
 import edu.fcps.karel2.Robot;
 
 
-public class Lab00 {
+public class Lab02 {
 
 	/**
 	 * @param args
@@ -10,19 +10,64 @@ public class Lab00 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		Display.openWorld("../maps/first.map");
+		Display.openWorld("../maps/maze.map");
       Display.setSize(10,10);
       Display.setSpeed(2);
-		Robot karel = new Robot();
+		Athlete karel = new Athlete();
+      karel.putBeeper();
+      karel.move();
+      karel.putBeeper();
+      karel.turnRight();
+      karel.move();
+      karel.putBeeper();
+      karel.turnRight();
+      karel.move();
+      karel.putBeeper();
+      karel.turnLeft();
+      karel.move();
       
-      karel.move();
-      karel.pickBeeper();
-      karel.move();
+      karel.putBeeper();
       karel.turnLeft();
       karel.move();
       karel.putBeeper();
+      karel.turnRight();
       karel.move();
+      karel.putBeeper();
       
+      karel.move();
+      karel.putBeeper();
+      karel.turnRight();
+      karel.move();
+      karel.putBeeper();
+      karel.turnLeft();
+      karel.move();
+      karel.putBeeper();
+      karel.turnLeft();
+      karel.move();
+      karel.putBeeper();
+      
+      karel.move();
+      karel.putBeeper();
+      
+      karel.move();
+      karel.putBeeper();
+      
+      karel.move();
+       karel.putBeeper();
+    
+      karel.turnRight();
+       
+      karel.move();
+      karel.putBeeper();
+      karel.move();
+
+
+
+
+
+
+
+            
       
 	}
 
