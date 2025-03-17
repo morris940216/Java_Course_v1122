@@ -1,45 +1,21 @@
 import edu.fcps.karel2.Display;
-import edu.fcps.karel2.Robot;
-import javax.swing.JOptionPane;
 
 
- public class Lab09 {
+
+ public class Lab15 {
 
 	public static void main(String[] args) {
-	
-   
-      String filename = JOptionPane.showInputDialog("What robot world?");
-   
-      Display.openWorld("../maps/"+filename+".map");
-      Display.setSize(10, 10);
-      Display.setSpeed(10);
+	   Display.setSize(15,15);
+      Display.setSpeed(8);
       
-      Athlete karel = new Athlete( 1, 1, Display.EAST, 0);
+      Dancer dancer1 = new BackAndForthDancer(2,5,Display.NORTH,0);
+      Dancer dancer2 = new SquareDancer(5,5,Display.NORTH,0);
+      Dancer dancer3 = new BigSquareDancer(10,6,Display.NORTH,10);
+
       
+      new Thread(dancer1).start();
+      new Thread(dancer2).start();
+      new Thread(dancer3).start();
       
-      int beepers = 0;
-     int steps = 1;
-      
-      while(karel.nextToABeeper())
-      {
-         karel.pickBeeper();
-      }
-      karel.move();
-      steps++;
-      while(steps <= 8)
-      {
-         beepers = karel.getBeepers();
-         while(karel.nextToABeeper())
-         {
-            karel.pickBeeper();
-         }
-         for(int i = 0; i < beepers; i++)
-         {
-            karel.putBeeper();
-         }
-         beepers = 0;
-         steps ++;
-         karel.move();
       }
    }
-}
