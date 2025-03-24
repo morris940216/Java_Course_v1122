@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
 	public static void main(String[] args) {
 	
       
-      Display.openWorld("../maps/maze3.map");
+      Display.openWorld("../maps/maze9r.map");
       Display.setSize(10, 10);
       Display.setSpeed(10);
       
