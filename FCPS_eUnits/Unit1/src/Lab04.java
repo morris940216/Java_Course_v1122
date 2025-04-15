@@ -11,7 +11,9 @@ public class Lab04 {
 	   arg.move();
 	   arg.turnRight();
 	   arg.move();
-	   arg.move();
+	   arg.move();     
+      
+     
     }
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
