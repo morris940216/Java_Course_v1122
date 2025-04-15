@@ -1,4 +1,4 @@
-	//Name______________________________ Date_____________
+	//B11207014
    import edu.fcps.Turtle;
    import java.awt.Color;
    import javax.swing.*;
@@ -13,18 +13,28 @@
          frame.setContentPane(new TurtlePanel());
          frame.setVisible(true);
          
-         Turtle.setCrawl(true);     //a class method
-      
+         Turtle.setCrawl(true);          
          SquareTurtle smidge = new SquareTurtle();
          smidge.setColor(Color.BLUE);
          smidge.setThickness(6);
          smidge.drawShape();
-      
-         /************************/
-      	/*                      */
-      	/* Your code goes here. */
-      	/*                      */
-      	/************************/
-      
+         
+         smidge = new SquareTurtle(90);
+         smidge.setColor(Color.BLACK);
+         smidge.setThickness(6);
+         smidge.drawShape();
+         
+         smidge = new SquareTurtle(100, 250, 45);
+         smidge.setColor(Color.red);
+         smidge.setThickness(4);
+         smidge.drawShape();
+         
+         for(int k = 50; k < 150; k += 50)
+         {
+         smidge = new SquareTurtle(500, 250, 135, k);
+         smidge.setColor(Color.yellow);
+         smidge.setThickness(10);
+         smidge.drawShape();
+         }            
       }
    }
