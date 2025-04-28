@@ -7,7 +7,7 @@
     // constructors
        public Ball()         //default constructor
       {
-         super(200, 200, 50, Color.BLACK);
+         super(200, 200, 50, Color.PINK);
          dx = Math.random() * 12 - 6;          // to move vertically
          dy = Math.random() * 12 - 6;          // to move sideways
       }
